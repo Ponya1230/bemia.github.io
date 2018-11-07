@@ -13,11 +13,11 @@
       }
     });
     $('img').each(function(n) {
-      $(this).error(function() {
+      $(this).on("error", function() {
         $(this).attr('src', 'https://d01t.github.io/assets/img/noimage.png');
       });
     });
-  }); 
+  });
 </script>
 <script>
   window.dataLayer = window.dataLayer || [];
