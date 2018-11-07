@@ -1,0 +1,28 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-128910846-1" async></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/bin/materialize.min.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/prism.min.js"></script>
+<script type="text/javascript">
+  var now = new Date('{{ site.time }}').getTime();
+  $(document).ready(function () {
+    M.AutoInit();
+    $('time').each(function () {
+      if (now - (new Date($(this).attr('datetime')).getTime()) < 311040000){
+        $(this).append('<span class="new badge"></span>');
+      }
+    });
+    $('img').each(function(n) {
+      $(this).error(function() {
+        $(this).attr('src', 'https://d01t.github.io/assets/img/noimage.png');
+      });
+    });
+  });
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.author.google_analytics }}');
+</script>

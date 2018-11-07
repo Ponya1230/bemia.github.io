@@ -1,0 +1,44 @@
+title: Bemia
+description: Bemia Blog
+url: https://bemia.github.io
+timezone: Asia/Seoul
+permalink: pretty
+encoding: utf-8
+incremental: true
+keywords: ["베미아", "Bemia", "ベーミア", "포냐", "Ponya", "ポニャ", "넨카", "Nenka", "ネンカ"]
+
+about: "베미아의 블로그"
+
+author:
+  disqus: cutebemia
+  email: cutebemia@gmail.com
+  github: Ponya2002 # required
+  google_analytics: UA-128910846-1
+  name: Bemia # required
+  telegram: t_bemia
+
+paginate: 5
+paginate_path: "/page/:num/"
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed
