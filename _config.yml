@@ -19,11 +19,7 @@ author:
 
 paginate: 5
 paginate_path: "/page/:num/"
-
-collections:
-  authors:
-    output: true
-    permalink: /authors/:path/
+output: true
 
 defaults:
   - scope:
@@ -31,11 +27,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
 
 kramdown:
   input: GFM
