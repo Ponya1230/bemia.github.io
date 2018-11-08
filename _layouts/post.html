@@ -44,6 +44,7 @@ layout: default
           </div>
         </article>
       </div>
+      {% if page.comments %}
       <div class="col s12">
         <article>
           <div class="card">
@@ -54,6 +55,7 @@ layout: default
           </div>
         </article>
       </div>
+      {% endif %}
       <div class="col s12">
         {% if page.next %}
         <div class="left">
@@ -72,4 +74,6 @@ layout: default
   </div>
 </div>
 
-<script id="dsq-count-scr" src="//cutebemia.disqus.com/count.js" async></script>
+{% if page.comments %}
+<script id="dsq-count-scr" src="//{{ site.author.disqus }}.disqus.com/count.js" async></script>
+{% endif %}
