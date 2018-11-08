@@ -9,8 +9,8 @@ layout: default
         <article>
           <div class="card">
             {% if page.image.src %}
-            <div class="card-image medium">
-              <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ page.image.src }}" onerror="this.src='https://d01t.github.io/assets/img/noimage.png'">
+            <div class="card-image">
+              <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ page.image.src }}" onerror="this.src='{{ site.url }}/assets/img/noimage.png'" style="height: 250px;">
               <span class="card-title truncate" style="background: rgba(0,0,0,0.2); width: 100%;">{{ page.title }}</span>
             </div>
             {% endif %}
