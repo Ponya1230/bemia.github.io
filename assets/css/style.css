@@ -15,3 +15,5 @@ html, body { height: 100%; }
   height: auto; }
 
 .parallax-container .section { width: 100%; }
+
+#post-content img { width: 100%; }
