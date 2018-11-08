@@ -1,3 +1,5 @@
+html, body { height: 100%; }
+
 #post-content h1 { font-size: 24px; }
 #post-content h2 { font-size: 22px; }
 #post-content h3 { font-size: 20px; }
@@ -8,7 +10,7 @@
 .logo-font { font-family: 'Coda', cursive; }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 250px;
   line-height: 0;
   height: auto; }
 
