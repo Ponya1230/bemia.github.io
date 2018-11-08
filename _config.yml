@@ -17,7 +17,7 @@ author:
   name: Bemia # required
   telegram: t_bemia
 
-paginate: 5
+paginate: 6
 paginate_path: "/page/:num/"
 output: true
 
